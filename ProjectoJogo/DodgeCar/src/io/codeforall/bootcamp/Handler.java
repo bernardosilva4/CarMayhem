@@ -1,11 +1,9 @@
-import com.sun.org.apache.bcel.internal.generic.ANEWARRAY;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+package io.codeforall.bootcamp;
+
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
-
-import javax.jws.Oneway;
 
 public class Handler implements KeyboardHandler {
 

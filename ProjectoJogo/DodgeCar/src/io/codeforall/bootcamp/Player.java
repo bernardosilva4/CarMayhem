@@ -1,9 +1,13 @@
+package io.codeforall.bootcamp;
+
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Player {
 
     private Rectangle playerRectangle;
+
+    private Picture picture;
 
 
 
@@ -17,16 +21,20 @@ public class Player {
     }
 
     public void moveRight() {
-        if(playerRectangle.getX() == .getMaxX()) {
-            playerRectangle.translate(0,0);
+        //if(playerRectangle.getX() == picture.getMaxX()) {
+        //    playerRectangle.translate(0,0);
 
-        }
+        //}
         playerRectangle.translate(10, 0);
     }
 
 
     public void moveLeft() {
+        if ((playerRectangle.getWidth() == 10)) {
+            playerRectangle.translate(10, 0);
+        }
         playerRectangle.translate(-10, 0);
+
     }
     public void moveUp() {
         playerRectangle.translate(0, -10);

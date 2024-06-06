@@ -1,3 +1,5 @@
+package io.codeforall.bootcamp;
+
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Car {

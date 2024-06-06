@@ -1,3 +1,5 @@
+package io.codeforall.bootcamp;
+
 public class Field {
 
     private static int width;

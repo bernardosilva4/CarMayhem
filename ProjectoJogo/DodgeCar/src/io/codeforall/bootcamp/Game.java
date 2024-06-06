@@ -1,5 +1,6 @@
+package io.codeforall.bootcamp;
+
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
-import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game
 {
@@ -7,7 +8,7 @@ public class Game
 
     Player player = new Player();
 
-    //Car car = new Car();
+    //io.codeforall.bootcamp.Car car = new io.codeforall.bootcamp.Car();
 
 
     public static final int NUM_CARS = 4;

@@ -1,3 +1,5 @@
+package io.codeforall.bootcamp;
+
 public enum GridDirection {
 
     UP,
