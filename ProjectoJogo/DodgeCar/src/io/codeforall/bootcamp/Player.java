@@ -11,7 +11,8 @@ public class Player {
 
 
 
-    public Player() {
+    public Player(Picture picture) {
+        this.picture = picture;
         playerRectangle = new Rectangle(15, 60, 80, 40);
     }
 
@@ -21,27 +22,23 @@ public class Player {
     }
 
     public void moveRight() {
-        //if(playerRectangle.getX() == picture.getMaxX()) {
-        //    playerRectangle.translate(0,0);
-
-        //}
-        playerRectangle.translate(10, 0);
+        if((playerRectangle.getX() + playerRectangle.getWidth() + 10) <= (picture.getX() + picture.getWidth()))
+            playerRectangle.translate(10,0);
     }
 
 
     public void moveLeft() {
-        if ((playerRectangle.getWidth() == 10)) {
-            playerRectangle.translate(10, 0);
-        }
-        playerRectangle.translate(-10, 0);
-
+        if((playerRectangle.getX() - 10) >= picture.getX())
+            playerRectangle.translate(-10, 0);
     }
     public void moveUp() {
-        playerRectangle.translate(0, -10);
+        if(playerRectangle.getY() - 10 >= picture.getY())
+            playerRectangle.translate(0, -10);
     }
 
     public void moveDown() {
-        playerRectangle.translate(0, 10);
+        if((playerRectangle.getY() + playerRectangle.getHeight() + 10) <= (picture.getY()) + picture.getHeight())
+            playerRectangle.translate(0, 10);
     }
 
 

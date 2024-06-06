@@ -1,12 +1,13 @@
 package io.codeforall.bootcamp;
 
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game
 {
     Rectangle road = new Rectangle(10, 10, 533, 200);
-
-    Player player = new Player();
+    Picture picture = new Picture(10, 10, "resources/images/empty-road.jpeg");
+    Player player = new Player(picture);
 
     //io.codeforall.bootcamp.Car car = new io.codeforall.bootcamp.Car();
 
@@ -25,6 +26,7 @@ public class Game
     public void init() {
         cars = new Car[NUM_CARS];
 
+        picture.draw();
         new Handler(player);
         road.draw();
         player.fill();
